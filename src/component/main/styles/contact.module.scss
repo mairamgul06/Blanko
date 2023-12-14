@@ -1,0 +1,113 @@
+.Contact{
+    padding: 90px 0px 90px;
+    &Wrapper{
+        background-color: rgba(255, 113, 67, 1);
+        padding: 60px;
+       display: flex;
+       justify-content: space-around;
+       flex-wrap: wrap;
+    }
+    &Generate{
+        max-width: 440px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 1);
+        box-shadow: 0px 0px 24px 0px rgba(0, 0, 0, 0.12);
+        padding: 60px;
+    }
+    &Title{
+        font-weight: 700;
+        font-size: 32px;
+        color: rgba(0, 0, 0, 1);
+        margin-bottom: 20px;
+    }
+    &List{
+        font-weight: 400;
+        font-size: clamp(12px, 5vw, 16px);
+        color: rgba(0, 0, 0, 1);
+        margin-top: 10px;
+    }
+    &Input{
+        width: 100%;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 6px;
+        border: none;
+        outline: none;
+        margin-top: 10px;
+        
+    }
+    &Input::placeholder{
+        font-weight: 400;
+        font-size: 16px;
+        color: rgba(170, 170, 170, 1);
+        padding-left: 30px;
+    }
+    &Tool{
+        display: flex;
+        align-items: center;
+        margin-top: 10px;
+    }
+    &Check{
+        width: 24px;
+        height: 24px;
+        margin-right: 5px;
+
+    }
+    &Flex{
+        display: flex;
+        align-items: center;
+        margin-top: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    &Button{
+        width: 100%;
+        height: 60px;
+        background-color: rgba(0, 0, 0, 1);
+        border: none;
+        outline: none;
+        border-radius: 6px;
+        cursor: pointer;
+        color: rgba(255, 255, 255, 1);
+        font-weight: 700;
+        font-size: 16px;
+        margin-top: 20px;
+    }
+    &Link{
+        font-weight: 400;
+        font-size: 16px;
+        color: rgba(255, 113, 67, 1);
+        margin-left: 5px;
+        text-decoration: none;
+        margin-top: 10px;
+    }
+
+}
+@media (max-width:480px) {
+    .Contact{
+        padding: 30px 0px 30px;
+        &Wrapper{
+            padding: 20px;
+        }
+        &Generate{
+            padding: 20px;
+        }
+        &Input{
+            height: 45px;
+        }
+        &Input::placeholder{
+            font-size: 13px;
+        }
+        &Button{
+            height: 45px;
+            font-size: 14px;
+        }
+        &Title{
+            font-size: 20px;
+            margin-bottom: 0;
+        }
+    }
+}
+

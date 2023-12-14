@@ -1,0 +1,141 @@
+.Home{
+    background-color: rgba(255, 113, 67, 1);
+
+    &Wrapper{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    &Complate{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 632px;
+        height: 532px;
+    }
+
+    &Title{
+        color: rgba(0, 0, 0, 1);
+        font-weight: 700;
+        font-size: clamp(18px, 8vw, 72px);
+        margin-bottom: 15px;
+    }
+    &Button, &Btn{
+        width: 226px;
+        height: 64px;
+        border-radius: 6px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 18px;
+        background-color: rgba(0, 0, 0, 1);
+        color: rgba(255, 255, 255, 1);
+
+
+    }
+    &Btn{
+        background-color: rgba(255, 255, 255, 1);
+        color: rgba(0, 0, 0, 1);
+
+    }
+    &Subtitle{
+        font-weight: 400;
+        font-size: clamp(12px, 8vw, 16px);
+        text-align: center;
+        color: rgba(0, 0, 0, 1);
+        
+    }
+    &Diligent, &Direct{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &Tool{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 75%;
+        margin-top: 30px;
+        flex-wrap: wrap;
+    }
+    &Text{
+        font-weight: 700;
+        font-size: clamp(13px, 8vw, 20px);
+        color: rgba(0, 0, 0, 1);
+        text-align: center;
+    }
+    &Flex{
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    &Pass{
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+    }
+    &List{
+        font-weight: 400;
+        font-size: clamp(12px, 8vw, 16px);
+        color: rgba(0, 0, 0, 1);
+    }
+    &Lists{
+        font-weight: 400;
+        font-size: clamp(11px, 8vw, 15px);
+        color: rgba(0, 0, 0, 0.6);
+    }
+    
+
+    &Generate{
+        width: 417px;
+        height: 732px;
+        overflow: hidden;
+
+    }
+    &Image{
+        width: 100%;
+        height: 100%;
+    }
+}
+@media (max-width: 1049px) {
+    .Home{
+
+        &Complate{
+            justify-content: space-around;
+        }
+    }
+}
+@media (max-width: 768px){
+    .Home{
+
+        &Tool{
+            width: 100%;
+            justify-content: center;
+        }
+        &Button, &Btn{
+            width: 170px;
+            height: 50px;
+            margin: 10px;
+            font-size: 15px;
+        }
+    }
+}
+@media (max-width: 481px){
+    .Home{
+
+        &Button, &Btn{
+            width: 150px;
+            height: 40px;
+            margin: 10px;
+            font-size: 12px;
+        }
+        &Generate{
+            display: none;
+        }
+    }
+}

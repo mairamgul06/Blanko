@@ -1,0 +1,136 @@
+.Content{
+    padding: 90px 0px 90px;
+
+    &Wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    &Wraps{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+    }
+    &Desing{
+        display: flex;
+        width: 416px;
+        align-items: center;
+    }
+    &Logo{
+        width: 100px;
+        height: 100px;
+        background-color: rgba(253, 231, 218, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &Letter{
+        color: rgba(0, 0, 0, 1);
+        font-weight: 700;
+        font-size: clamp(14px, 8vw, 20px);
+    }
+    &List{
+        margin-left: 30px;
+    }
+    &Text{
+        color: rgba(0, 0, 0, 1);
+        font-weight: 400;
+        font-size: clamp(12px, 8vw, 16px);
+        margin-top: 15px;
+
+    }
+    &Direct{
+        display: flex;
+        align-items: center;
+        height: 603px;
+        background-color: rgba(0, 0, 0, 1);
+        justify-content: space-between;
+    }
+    &Complate{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+    }
+    &Title{
+        font-weight: 400;
+        font-size:40px;
+        color: rgba(255, 255, 255, 1);
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    &Img{
+        margin-bottom: 20px;
+    }
+    &Name{
+        font-weight: 700;
+        color: rgba(255, 255, 255, 1);
+        font-size: clamp(12px, 8vw, 18px);
+        margin-bottom: 10px;
+    }
+    &Fiture{
+        font-weight: 400;
+        font-size: clamp(12px, 8vw, 16px);
+        color: rgba(255, 255, 255, 0.7);
+        margin-bottom: 15px;
+    }
+    &Tool{
+        display: flex;
+    }
+    &Block, &Blocks{
+        width: 16px;
+        height: 16px;
+        background-color: rgba(255, 255, 255, 0.4);
+        margin: 5px;
+    }
+    &Block{
+        background-color: rgba(255, 255, 255, 1);
+    }
+    &Generate{
+        width: 30%;
+        height: 603px;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+@media (max-width:1248px) {
+    .Content{
+
+        &Desing{
+            margin: 20px;
+        }
+        
+    }
+}
+@media (max-width:800px) {
+    .Content{
+        &Direct{
+            position: relative;
+        }
+        &Generate{
+            position: absolute;
+            z-index: 0;
+            width: 70%;
+        }
+        &Complate{
+            z-index: 1;
+            width: 100%;
+        }
+        &Title{
+            font-size: 35px;
+        }
+    }
+}
+@media (max-width:480px){
+    .Content{
+        &Generate{
+            width: 100%;
+        }
+        &Title{
+            font-size: 30px;
+        }
+    }
+}

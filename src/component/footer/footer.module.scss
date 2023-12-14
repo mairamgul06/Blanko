@@ -1,0 +1,58 @@
+.Footer{
+    padding: 60px 0px 20px;
+    background-color: rgba(0, 0, 0, 1);
+    &Wrapper{
+        display: flex;
+        flex-direction: column;
+    }
+    &First, &Second, &Third{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    &First{
+        margin-bottom: 80px;
+    }
+    &Second{
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+        align-items: center;
+    }
+    &Third{
+        margin-top: 20px;
+    }
+    &Direct, &Wrap{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &Logo{
+        width: 48px;
+        height: 48px;
+        background-color: rgba(255, 255, 255, 0.12);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 4px;
+        margin: 5px;
+    }
+    &Button{
+        width: 185px;
+        height: 48px;
+        border-radius: 6px;
+        color: rgba(0, 0, 0, 1);
+        font-weight: 700;
+        font-size: 16px;
+        border: none;
+        outline: none;
+    }
+    &List, &Link, &Links{
+        font-weight: 400;
+        color: rgba(255, 255, 255, 1);
+        font-size: 16px;
+        margin: 10px;
+    }
+    &Links{
+        color: rgba(255, 113, 67, 1);
+    }
+}
